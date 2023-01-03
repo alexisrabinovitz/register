@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+
+    <style>
+      form {
+        font-family: Verdana, sans-serif;
+      }
+      body {
+        width: 300px;
+        border: 15px solid grey;
+        padding: 50px;
+        margin: 20px;
+        line-height: 1.5;
+        position: absolute;
+        left: 32%;
+      }
+      h3 {
+        color: indigo;
+        text-align: center;
+        margin-top: -5px;
+      }
+      h4 {
+        text-align: center;
+        margin-top: -7px;
+      }
+      input {
+        position: absolute;
+        left: 42%;
+        background-image: linear-gradient(purple, white);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- method GET or POST -->
+    <div>
+      <form method="get">
+        <a href="/../index.html"><h4>Go back!</h4></a>
+        <h3>Fill in the form</h3>
+        <label>
+          First Name: <input type="text" id="firstname" name="firstname"
+        /></label>
+        <br />
+        <label
+          >Last Name: <input type="text" id="lastname" name="lastname" /> <br />
+        </label>
+
+        <label>
+          Email:
+          <input type="email" required name="email"
+        /></label>
+        <br />
+        <label
+          >Password: <input type="password" name="password" min="5" /> </label
+        ><br />
+        <label>Birthday: <input type="date" name="birthday" /></label><br />
+        Gender: <br />
+        <label><input type="radio" name="gender" value="male" />Male </label>
+        <br />
+        <label><input type="radio" name="gender" value="female" />Female </label
+        ><br />
+        <label><input type="radio" name="gender" value="other" />Other </label
+        ><br />
+
+        Pets: <br />
+        <label><input type="checkbox" name="pet" value="cat" />Cat </label
+        ><br />
+        <label><input type="checkbox" name="pet" value="dog" />Dog </label
+        ><br />
+        Cars: <br />
+        <select name="cars">
+          <option value="Volvo">Volvo</option>
+          <option value="Audi">Audi</option>
+          <option value="Kia">Kia</option></select
+        ><br />
+
+        <input type="submit" value="Register!" /><br />
+        <input type="reset" value="Reset" />
+      </form>
+    </div>
+  </body>
+</html>
+
+<!-- firstname=Alexis 
+    &lastname=Rabinovitz 
+    &email=alerabinovitz%40gmail.com
+    &password=123456 
+    &birthday=2007-07-27 
+    &gender=female 
+    &pet=dog &cars=Audi -->
