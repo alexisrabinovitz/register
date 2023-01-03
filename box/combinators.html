@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* descendant combinator */
+      div li {
+        color: yellowgreen;
+      }
+
+      /* child combinator */
+      div > p {
+        color: yellowgreen;
+      }
+
+      /* adjacent siblinb */
+      h4 + p {
+        background-color: greenyellow;
+        text-transform: uppercase;
+      }
+
+      h2 + p {
+        background-color: greenyellow;
+      }
+
+      /* general sibling */
+
+      h3 ~ p {
+        color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>Hola</li>
+        <li>hola</li>
+        <li>hola</li>
+      </ul>
+    </div>
+    <div>
+      <p>Hola como estás</p>
+      <span>todo bien gracias</span>
+      <p>hola como estás</p>
+    </div>
+
+    <h4>Ejemplos:</h4>
+    <p>Estos son los ejemplos</p>
+    <ul>
+      <li>ejemplo 1</li>
+      <li>ejemplo 2</li>
+      <li>ejemplo 3</li>
+    </ul>
+
+    <h2>Ejemplos:</h2>
+    <p>ejemplo 1</p>
+    <p>ejemplo 2</p>
+    <p>ejemplo 3</p>
+
+    <h3>Ejemplos:</h3>
+    <p>ejemplo 1</p>
+    <span>ejemplo 2</span>
+    <p>ejemplo 3</p>
+    <p>ejemplo 4</p>
+  </body>
+</html>
