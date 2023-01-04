@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+</head>
+    <style>
+        p{
+            color: white;
+        }
+        /* static is default */
+        /* relative is the same as default static but can position left right etc */
+        /* use position relative in parent to position absolute childs */
+        /* absolute is like relative but removes it from document flow and all other elements ignore it completely  */
+        /* fixed ignores parent relative and absolute, it is based on entire html element and stay in the same place as you scroll*/
+        /* sticky is the combination of fixed and relative */
+
+        .parent {
+            background-color: blue;
+            /* position: relative; */
+            /* position: absolute; */
+
+            /* height: 200vh; */
+            /* use with child one position fixed */
+
+        }
+        .child-one {
+            background-color: red;
+            /* position: relative;
+            left: 10px;
+            top: 10px; */
+
+            /* position: absolute;
+            top: 10px; */
+
+            /* try with absolute so its not fixed */
+            /* position: fixed; */
+            /* top: 0px; */
+            /* right: 0px; */
+
+            /* position: sticky;
+            top: 0; */
+            /* use with height in parent */
+
+        }
+        .child-two {
+            background-color: green;
+
+        }
+        .child-three {
+            background-color: purple;
+
+        }
+        
+    </style>
+</head>
+    <body>
+        <a href="/../index.html"><h3>Go back!</h3></a>
+        <div class="parent"><p>Parent</p>
+            <div class="child-one child"><p>One</p></div>
+            <div class="child-two child"><p>Two</p></div>
+            <div class="child-three child"><p>Three</p></div>
+        </div>
+
+    </body>
+</html>
+
+
+<!-- position: relative places an element relative to its current position without changing the layout around it, whereas position: absolute places an element relative to its parent’s position and changing the layout around it. -->

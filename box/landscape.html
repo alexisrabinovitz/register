@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landscape</title>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      .circulo {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: rgba(255, 208, 0, 0.876);
+      }
+      .triangle {
+        width: 0;
+        height: 0;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 300px solid green;
+        margin-left: 100px;
+        position: relative;
+      }
+      .tronco {
+        width: 20px;
+        height: 70px;
+        background-color: rgb(99, 50, 1);
+        position: absolute;
+        transform: translate(-60%, 428%);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/../index.html"><h3>Go back!</h3></a>
+    <div class="circulo"></div>
+    <div class="triangle">
+      <div class="tronco"></div>
+    </div>
+  </body>
+</html>
