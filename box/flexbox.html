@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Properties</title>
+    <style>
+      /* #box-1 {
+        width: 200px;
+        height: 100px;
+        border: 3px solid black;
+        background-color: aqua;
+        position: relative;
+      }
+      #box-2 {
+        width: 200px;
+        height: 200px;
+        border: 3px solid black;
+        background-color: aqua;
+        position: relative;
+      }
+
+      #box-3 {
+        width: 200px;
+        height: 400px;
+        border: 3px solid black;
+        background-color: aqua;
+        position: absolute;
+      } */
+
+
+        .flexbox-container {
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1080px;
+        /* align-content: center; */
+        flex-direction: column;
+      
+          }
+          /* si solamente pones display flex, te alinea los objetos de forma horizontal. 
+            para que respete las alturas en lo vertical hay que poner align-items.
+            si tienes pocos elementos usar align-items
+            si tienes muchos elementos usar align-content 
+            align-items: modifica en horizontal
+            justify-content: modifica en vertical
+            para alinear contenido: felx-start, flex-end, center */
+
+        .flexbox-item {
+            width: 200px;
+            margin: 10px;
+            border: 3px solid #333;
+            background-color: #dfdfdf;
+            /* align-self: flex-end; */
+        }
+          /* align-self ordena toda la clase de objetos */
+        .flexbox-item-1 {
+            min-height: 100px;
+            flex-basis: 2;
+        }
+
+        .flexbox-item-2 {
+            min-height: 200px;
+        }
+
+        .flexbox-item-3 {
+            min-height: 300px;
+        }
+
+       
+        </style>
+    </style>
+  </head>
+
+  <body>
+    <a href="/../index.html"><h3>Go back!</h3></a>
+    <!-- <div id="box-1"></div>
+    <br />
+    <div id="box-2"></div>
+    <br />
+    <div id="box-3"></div> -->
+    <div class="flexbox-container">
+        <div class="flexbox-item flexbox-item-1"></div>
+        <div class="flexbox-item flexbox-item-2"></div>
+        <div class="flexbox-item flexbox-item-3"></div>
+        
+    </div>
+
+  </body>
+</html>
