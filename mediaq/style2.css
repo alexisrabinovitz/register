@@ -1,0 +1,92 @@
+body {
+    color: violet;
+}
+
+.title {
+    font-size: 6rem;
+}
+
+.subtitle {
+    font-size: 4rem;
+}
+
+@media all and (max-width: 500px) {
+    body {  
+        color: blue;
+    }
+    
+}
+
+@media (orientation: landscape) {
+    .title {
+        color: aqua;
+    }
+}
+
+@media (orientation: portrait) {
+    .subtitle {
+        color: rgb(175, 57, 175);
+    }
+}
+
+/* body {
+    color: red;
+}
+
+.title {
+    font-size: 6rem;
+}
+
+.subtitle {
+    font-size: 4rem;
+}
+
+@media all and (max-width: 500px) {
+    body {
+        color: blue;
+    }
+
+}
+
+@media (orientation: landscape){
+    .title {
+        color: green;
+    }
+}
+
+@media (orientation: portrait) {
+    .subtitle {
+        color: cyan;
+    }
+} */
+
+/* and statement */
+
+/* @media (orientation: landscape) and (max-width: 500px){
+    .title {
+        color: green;
+    }
+} */
+
+/* or statement */
+
+/* @media (orientation: landscape), (max-width: 500px){
+    .title {
+        color: cyan;
+    }
+} */
+
+/* @media (orientation: landscape), (min-width: 500px){
+    .title {
+        color: cyan;
+    }
+} */
+
+
+
+
+/* Responsive Grid Media Queries - 1280, 1024, 768, 480
+    1280-1024   - desktop (default grid)
+    1024-768    - tablet landscape
+    768-480     - tablet 
+    480-less    - phone landscape & smaller */
