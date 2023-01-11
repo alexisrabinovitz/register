@@ -1,0 +1,186 @@
+div {
+    height: 100px;
+
+}
+
+h3 {
+    color: black;
+}
+
+.div1 {
+background-color:  red;
+}
+
+.div2 {
+
+background-color: orange;
+
+}
+.div3 {
+ 
+background-color: yellow;
+}
+
+.div4{
+background-color: greenyellow;
+}
+
+@media all and (min-width: 600px){
+    div {
+        width: 100%;
+        float: left;
+    }
+    .div1{
+        background-color: rgb(247, 113, 113);
+    }
+
+    .div2 {
+        background-color: rgb(252, 199, 99);
+    }
+
+    .div3 {
+        background-color: rgb(193, 193, 86);
+    }
+
+    .div4 {
+        background-color: rgb(136, 224, 136);
+    }
+}
+
+@media all and (min-width: 900px){
+    div {
+        width: 50%;
+        float: left;
+    
+    }
+    .div1{
+        background-color: rgb(218, 37, 203);
+    }
+
+    .div2 {
+        background-color: rgb(198, 128, 0);
+    }
+
+    .div3 {
+        background-color: rgb(25, 255, 205);
+    }
+
+    .div4 {
+        background-color: rgb(0, 185, 34);
+    }
+}
+
+@media all and (min-width: 1200px){
+    div {
+        width: 25%;
+        float: left;
+    }
+    .div1{
+        background-color: rgb(154, 136, 219);
+    }
+
+    .div2 {
+        background-color: rgb(166, 210, 113);
+    }
+
+    .div3 {
+        background-color: rgb(11, 120, 97);
+    }
+
+    .div4 {
+        background-color: rgb(63, 69, 219);
+    }
+}
+
+/* div {
+    height: 100px;
+}
+
+h3 {
+    color: white;
+}
+
+#div1 {
+    background-color: purple;
+}
+
+#div2 {
+    background-color: green;
+}
+
+#div3 {
+    background-color: blue;
+}
+
+#div4 {
+    background-color: red;
+}
+
+/* The logical keywords "not" or "only" 
+can be used optionally to include or exclude specific media types or screen sizes */
+/* 
+@media only screen and (min-width: 600px) {
+    div {
+        width: 100%;
+    }
+    #div1 {
+        background-color: blue;
+    }
+    
+    #div2 {
+        background-color: red;
+    }
+    
+    #div3 {
+        background-color: purple;
+    }
+    
+    #div4 {
+        background-color: green;
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+    div {
+        width: 50%;
+        float: left;
+    }
+    #div1 {
+        background-color: purple;
+    }
+    
+    #div2 {
+        background-color: green;
+    }
+    
+    #div3 {
+        background-color: red;
+    }
+    
+    #div4 {
+        background-color: blue;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    div {
+        width: 25%;
+        float: left;
+    }
+    #div1 {
+        background-color: red;
+    }
+    
+    #div2 {
+        background-color: blue;
+    }
+    
+    #div3 {
+        background-color: green;
+    }
+    
+    #div4 {
+        background-color: purple;
+    }
+} */ 

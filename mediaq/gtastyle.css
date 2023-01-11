@@ -1,0 +1,82 @@
+body, html {
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 27% 27% 27%;
+    grid-template-rows: 8% 30% auto 10%;
+    grid-template-areas:
+    "sidebar header header header"
+    "sidebar sect1 sect2 sect3"
+    "sidebar main main main"
+    "sidebar footer footer footer"
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: rgb(192, 149, 244);
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(62, 30, 93);
+}
+#section1 {
+    grid-area: sect1;
+    background-color: rgb(150, 106, 203);
+}
+
+#section2 {
+    grid-area: sect2;
+    background-color: blueviolet;
+}
+
+#section3 {
+    grid-area: sect3;
+    background-color: rgb(92, 8, 170);
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(227, 202, 250);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(157, 102, 209);
+}
+
+
+
+@media (max-width: 700px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+        "header header"
+        "sidebar sect1"
+        "sidebar sect2"
+        "sidebar sect3"
+        "main main"
+        "footer footer"
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "sidebar"
+        "sect1"
+        "sect2"
+        "sect3"
+        "main"
+        "footer"
+    }
+}
